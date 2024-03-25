@@ -1,97 +1,125 @@
+/* Import Josefin Sans font (replace URL with yours) */
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
 body {
-  background: #1B1B25;
-  color: #fff;
-  font-family: Josefin Sans;
+  background-color: #fafafa; /* Light gray background */
+  color: #0d0d0d; /* Dark gray text */
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 20px;
+  padding: 0;
 }
 
-.separator {
-  width: 40%;
+.resume-container {
+  width: 100%; /* Responsive layout */
+  max-width: 768px; /* Set a maximum width */
+  margin: 0 auto; /* Center the resume horizontally */
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Subtle shadow effect */
 }
 
-.title {
-  margin-top: 100px;
-  margin-bottom: 10px;
-  
-  a {
-    color: #DB4D57;
-    
-    &:hover {
-      text-decoration: none;
-      font-weight: bold;
-    }
-  }
-  
-  hr {
-    width: 75%;
-  }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  margin-bottom: 30px;
 }
 
-.OBJECTIVE {
-  padding: 20px;
-  
-  p {
-    font-size: 1.6rem;
-    letter-spacing: .2rem;
-  }
+.contact-info {
+  text-align: left;
 }
 
-
-.work-experience {
-  padding: 20px;
-  
-  .experience-title {
-    margin-top: 50px;
-  }
-  
-  .experience-summary {
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
-  
-  p {
-    font-size: 1.6rem;
-    letter-spacing: .2rem;
-  }
+.contact-info h4,.contact-info a {
+  color: #2c0b87; /* Lighter text color for contact info */
+  font-size: 14px;
+  margin: 5px 0;
 }
-
-.skills-hobbies {
-  padding: 20px;
-  margin-top: 50px;
-}
-
-.skills-hobbies h2 {
-  margin-bottom: 20px;
+a {
+    color: green; /* Change link color to green */
+  }
+h1 {
   font-size: 32px;
-  color: #fafafa; /* Brand color for headings */
+  margin: 0;
 }
 
-.skills-hobbies .row {
-  margin-top: 0px;
+main.content {
+  display: flex; /* Use flexbox for layout sections */
+  flex-wrap: wrap; /* Wrap sections on smaller screens */
 }
 
-.skills-hobbies .col-md-6 {
-  width: 50%;
-  float: left;
+section {
+  flex: 1 1 auto; /* Sections take up equal space (adjust if needed) */
+  margin-bottom: 20px;
+  padding: 20px; /* Consistent padding for sections */
+  border: 2px solid #d1cccc; /* Light border for sections */
+  border-radius: 5px;
 }
 
-.skills-hobbies ul {
-  list-style-type: none;
-  padding-left: 0;
+h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
 }
 
-.skills-hobbies li {
+.skills-container,
+.experience-container,
+.projects-container {
+  text-align: left; /* left text within sections */
+}
+
+.skills-list {
+  list-style-type: style inherit;
+  padding: 0;
+  align-items: left;
+  max-width: 300px; /* Limit width for responsiveness */
+}
+
+.skills-list li {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: left;
+}
+
+.skills-list li i {
+  margin-right: 10px;
+  color: #333; /* Use primary text color for icons */
   font-size: 16px;
-  letter-spacing: 0.1rem; /* Adjusted letter spacing */
-  margin-bottom: 10px;
-  color: #fff; /* Text color */
+  align-items: left;
+
 }
 
-/* Style the even and odd list items differently for better readability */
-.skills-hobbies .skills-list li:nth-child(odd) {
-  background-color: #2C2C39; /* Alternate background color */
+.work-experience .experience-entry,
+.projects .project-entry {
+  margin-bottom: 15px; /* Spacing between experience/project entries */
 }
 
-.skills-hobbies .skills-list li:nth-child(even) {
-  background-color: #0d0d00; /* Alternate background color */
+.experience-details {
+  margin-bottom: 10px; /* Spacing between title and description */
 }
+
+.experience-details h4,
+.project-entry h3 {
+  font-weight: bold;
+}
+
+/* Media queries for responsive adjustments */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack contact info and name on smaller screens */
+    align-items: left;
+    ;
+  }
+
+  .contact-info {
+    margin-bottom: 15px;
+  }
+
+  h1 {
+    text-align: left; /* Center name on smaller screens */
+  }
+
+  section {
+    margin-left: 0; /* Remove margin-left on smaller screens */
+    margin-right: 0; /* Remove margin-right on smaller screens */
+  }
+}
+
+/* Include Font Awesome icons (replace with your kit code) */
