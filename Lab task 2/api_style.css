@@ -1,0 +1,62 @@
+/* Add your custom styles here */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background: #6d67e4;
+  padding: 20px 0;
+}
+
+.logo img {
+  display: block;
+  width: 100px; /* Adjust as needed */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar nav ul li {
+  margin-left: 20px;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#api-data {
+  padding: 50px 0;
+}
+
+#api-data .content {
+  text-align: center;
+}
+
+.joke {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.joke p {
+  font-size: 1.2rem
+}
